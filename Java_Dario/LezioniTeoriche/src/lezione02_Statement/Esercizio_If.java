@@ -10,5 +10,6 @@ public class Esercizio_If {
 		 * la media per il voto finale
 		 */
 		
+		int votoScritto = 28;
 	}
 }
