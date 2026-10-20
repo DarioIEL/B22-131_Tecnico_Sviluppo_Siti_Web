@@ -1,0 +1,16 @@
+package lezione01_Intro;
+
+public class OperatoriLogici {
+	public static void main(String[] args) {
+	/**
+	 * && AND Logico
+	 * || OR Logico
+	 *  ! NOT Logico
+	 */
+		
+	//Posso disegnare la tabella delle verità
+		
+	
+		
+	}
+}

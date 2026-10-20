@@ -1,0 +1,35 @@
+package lezione01_Intro;
+
+public class Stringhe {
+
+	public static void main(String[] args) {
+		//Le stringhe non sono dei tipi primitivi, sono un tipo complesso, parliamo già di oggetti
+		String mioNome = "Dario";
+		
+		int numeroLettere = mioNome.length();
+		
+		System.out.println("Il mio nome è composto da " + numeroLettere + " caratteri");
+		
+		
+		//Le Stringhe sono oggetti 0-based
+		//                  0123456789....
+		String nomeCorso = "Tecnico sviluppo Siti Web";
+		int numCaratteri = nomeCorso.length(); //Att: vengono inclusi anche gli spazi nel conteggio
+		System.out.println("Lunghezza stringa " + numCaratteri + " caratteri");
+		
+		char primaLettera = nomeCorso.charAt(0);
+		System.out.println("In prima posizione si trova la lettera " + primaLettera);
+		
+		//											          25 - 1  = 24
+		char ultimaLettera = nomeCorso.charAt(nomeCorso.length() - 1);
+		
+		//Ricerca parola
+		boolean trovata = nomeCorso.contains("Tecn");
+		System.out.println("La stringa contiene la parola cercata: " + trovata);
+		
+		int posizione = nomeCorso.indexOf("Siti");
+		System.out.println("La parola Siti si trova in posizione " + posizione);
+
+	}
+
+}

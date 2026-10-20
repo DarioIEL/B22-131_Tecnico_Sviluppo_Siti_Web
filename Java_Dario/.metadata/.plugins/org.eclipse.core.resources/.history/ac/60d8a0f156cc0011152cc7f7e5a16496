@@ -1,0 +1,33 @@
+package lezione01_Intro;
+
+public class CastDelDato {
+	public static void main(String[] args) {
+		
+		//Posso dichiarare più variabili dello stesso tipo in un colpo solo
+		int num1 = 10, num2 = 12, num3 = 88, num4 = 5;
+		
+		//Cast widening(implicito): dal tipo più piccolo a più grande. Non sto facendo il cast
+		byte b = 42;
+		short s = b;
+		int i = s;
+		System.out.println("Valore di i = " + i);
+		
+		//Cast Narrowing(esplicito): dal tipo più grande al più piccolo
+		int iGrande = 130;
+		short sPiccolo = (short)iGrande; //In questo caso sto eplicitando il cast
+		System.out.println("sPiccolo vale = " + sPiccolo);
+		
+		//altro esempio di narrowing
+		double prezzo = 10.99;
+		int prezzoInt = (int) prezzo; //ATT: qui avviene un troncamento
+		System.out.println("Il prezzo è di soli " + prezzoInt + " €");
+		
+		//Trappole
+		int x = 7, y = 2;
+		
+		//Fai la divisione tra questi due numeri
+		double resDiv = (double)x/y;
+		
+		System.out.println("La divisione vale " + resDiv);
+	}
+}

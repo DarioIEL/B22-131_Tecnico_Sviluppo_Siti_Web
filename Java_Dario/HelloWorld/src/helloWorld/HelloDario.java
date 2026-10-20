@@ -1,0 +1,20 @@
+package helloWorld;
+
+public class HelloDario {
+
+	public static void main(String[] args) {
+		//descrivi te stesso utilizzando i tipi di dato che conosci. Stampa alla fine un resoconto in un Syso
+		String nome = "Dario";
+		String cognome = "Mennillo";
+		byte eta = 37;
+		String corso = "TSGSW";
+		String ente = "Immag & Lav";
+		
+		String presentazione = "Ciao mi chiamo \n" + nome + " " + cognome + ", ho " + eta + " anni e frequento il corso di " + corso +  " presso " + ente;
+		
+		System.out.println(presentazione);
+		
+		
+	}
+	
+}

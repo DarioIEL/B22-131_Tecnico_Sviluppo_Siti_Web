@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+C:\Users\TEACHER\Documents\Java_Dario\.metadata\.plugins\org.eclipse.jdt.core
+590571275.index
+1865797976.index
+2380175872.index

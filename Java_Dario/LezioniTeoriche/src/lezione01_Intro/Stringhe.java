@@ -1,0 +1,84 @@
+package lezione01_Intro;
+
+public class Stringhe {
+
+	public static void main(String[] args) {
+		//Le stringhe non sono dei tipi primitivi, sono un tipo complesso, parliamo già di oggetti
+		String mioNome = "Dario";
+		
+		int numeroLettere = mioNome.length();
+		
+		System.out.println("Il mio nome è composto da " + numeroLettere + " caratteri");
+		
+		
+		//Le Stringhe sono oggetti 0-based
+		//                  0123456789....
+		String nomeCorso = "Tecnico sviluppo Siti Web";
+		int numCaratteri = nomeCorso.length(); //Att: vengono inclusi anche gli spazi nel conteggio
+		System.out.println("Lunghezza stringa " + numCaratteri + " caratteri");
+		
+		char primaLettera = nomeCorso.charAt(0);
+		System.out.println("In prima posizione si trova la lettera " + primaLettera);
+		
+		//											          25 - 1  = 24
+		char ultimaLettera = nomeCorso.charAt(nomeCorso.length() - 1);
+		
+		//Ricerca parola
+		boolean trovata = nomeCorso.contains("Tecn");
+		System.out.println("La stringa contiene la parola cercata: " + trovata);
+		
+		int posizione = nomeCorso.indexOf("Siti");
+		System.out.println("La parola Siti si trova in posizione " + posizione);
+		
+		int posizioneLettera = nomeCorso.indexOf("e");
+		System.out.println("La lettera e si trova in posizione " +  posizioneLettera);
+		
+		int posizioneLettera2 = nomeCorso.lastIndexOf("e");
+		System.out.println("La lettera e si trova in posizione ultima " + posizioneLettera2);
+		
+		//taglia String
+		String parziale = nomeCorso.substring(5,10);
+		System.out.println("Stringa parziale: " + parziale);
+		
+		System.out.println(nomeCorso.toUpperCase());
+		System.out.println(nomeCorso.toLowerCase());
+		
+		String pezzo1 = "Andiamo in";
+		String pezzo2 = "pausa!";
+		String finale = pezzo1.concat(" ").concat(pezzo2);
+		
+		System.out.println(finale.toUpperCase());
+		
+		//Posso creare una stringa utilizzando la notazione con new
+		String s1 = new String("Ciao questa è una stringa");
+		
+		System.out.println(s1);
+		System.out.println(s1.charAt(2));
+		
+		//Come confrontare 2 stringhe
+		String s2 = "Ciao";  //definizione letterale --> memorizza nello String Pool
+		String s3 = new String("Ciao"); //definizione con costruttore --> memorizza nella memoria Heap
+		
+		boolean conf1 = s2.equals(s3); //.equales() confronta i contenuti
+		System.out.println("Le due stringhe sono uguali ? " + conf1);
+				
+		boolean conf2 = (s2 == s3); // == confronta i riferimenti. Quindi confronta due slot diversi di memoria
+		System.out.println("Le due stringhe sono uguali ? " + conf2);
+		
+		String s4 = "Ciao";
+		boolean conf3 = (s2 == s4); //true perché s2 e s4 arrivano dallo stesso String Pool
+		System.out.println("Le due stringhe sono uguali ? " + conf3 );
+		
+		String s5 = new String("Ciao");
+		boolean conf4 = (s5 == s3);
+		System.out.println(conf4); //false perché s5 e s3 pur essendo state create con new appartengono a due diversi indirizzi di memoria
+		boolean conf5 = s5.equals(s3);
+		System.out.println(conf5); //true perché s5 e s3 hanno lo stesso contenuto
+		
+		String s6 = "Ciao";
+		String s7 = "Miao";
+		boolean conf6 = s6 == s7; //false perché legge il contenuto dallo stesso StringPool
+		System.out.println(conf6);
+	}
+
+}

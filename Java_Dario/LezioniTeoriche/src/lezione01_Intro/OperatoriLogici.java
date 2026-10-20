@@ -1,0 +1,37 @@
+package lezione01_Intro;
+
+public class OperatoriLogici {
+	public static void main(String[] args) {
+	/**
+	 * && AND Logico
+	 * || OR Logico
+	 *  ! NOT Logico
+	 */
+		
+	//Posso disegnare la tabella delle verità
+		
+	/** TABELLA DELLE VERITA'
+	 * 	c1  |  c2  |  c1 && c2 | c1 || c2
+	 * 	 T 	|	T  |	 T	   |    T
+	 *   F  |   T  |   	 F     |    T
+	 *   T  |   F  |     F     |    T
+	 *   F  |   F  |     F     |    F
+	 */
+		
+	//valuto l'accesso al corso. Devo essere maggiorenne e disoccupato
+	int eta = 17;
+	boolean disocc = false;
+	
+	boolean condizione = (eta >= 18) && disocc;
+	System.out.println("Posso accedere al corso ? " + condizione);
+	
+	//Valuto l'ammissione al corso supponendo che tutti siano maggiorenni. Devo essere diplomato oppure disoccupato
+	boolean diploma = false;
+	boolean disocc2 = false;
+	
+	boolean condizione2 = diploma || disocc2;
+	
+	System.out.println("Posso partecipare al corso ? " + condizione2);	
+		
+	}
+}

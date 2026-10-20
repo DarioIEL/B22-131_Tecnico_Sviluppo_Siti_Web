@@ -1,0 +1,45 @@
+package lezione02_Statement;
+
+public class If_Statement {
+	public static void main(String[] args) {
+		//Uno dei pilastri della logica computazionale, serve a valutare delle condizioni boolean
+		/**
+		 * if(condizione){
+		 * 		..corpo o body, viene eseguito se e solo se la condizione è True
+		 * }
+		 * else if (condizione2) [opzionale] {
+		 * 		..esegue se condizione 2 è true
+		 * }
+		 * else { [OPZIONALE]
+		 * 		..esegue se tutte le condizioni precedenti sono false
+		 * }
+		 * 
+		 * 
+		 * ATT circa il funzionamento dell'if: una volta che una delle condizioni è valutata true, le successvive non verranno valutate. Vul dire che esco fuori dall'if
+		 */
+		
+		boolean pioggia = false;
+		
+		if(pioggia) {
+			System.out.println("Meglio se porti un ombrello");
+		}else {
+			System.out.println("Puoi mettere gli occhiali da sole");
+		}
+		
+//		L'utente può partecipare al corso se ha un'età compresa tra 18 e 35 anni
+		int etaUser = 36;
+		
+		if (etaUser >= 18 && etaUser <= 35) {
+			System.out.println("Hai l'età giusta per partecipare al corso");
+		}else if(etaUser < 18 && etaUser >= 1) {
+			System.out.println("Sei troppo piccolo per partecipare");
+		}else if(etaUser > 35) {
+			System.out.println("Sei troppo grande per partecipare");
+		}
+		else {
+			System.out.println("Età non valida");
+		}
+		
+		
+	}
+}
