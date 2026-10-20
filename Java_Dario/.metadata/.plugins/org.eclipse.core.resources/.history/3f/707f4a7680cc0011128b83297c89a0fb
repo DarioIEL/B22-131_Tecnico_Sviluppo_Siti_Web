@@ -1,0 +1,15 @@
+package lezione02_Statement;
+
+public class Esercizio_If {
+	public static void main(String[] args) {
+		
+		/**
+		 * Esami all'università
+		 * Dobbiamo valutare un esame all'università. Per poter sostenere l'orale devo aver
+		 * totalizzato almeno 18 all'esame scritto. Una volta inseriti entrambi i voti calcola 
+		 * la media per il voto finale
+		 */
+		
+		int votoScritto = 28;
+	}
+}

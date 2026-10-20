@@ -11,5 +11,6 @@ public class Esercizio_If {
 		 */
 		
 		int votoScritto = 28;
+		int votoOrale = 30;
 	}
 }
