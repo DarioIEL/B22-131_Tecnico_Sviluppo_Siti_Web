@@ -49,7 +49,7 @@ public class Array {
 		String[] nomi = {"Marco", "Anna", "Luca", "Maria"};
 		System.out.println("Nell'array ci sono " + nomi.length + " nomi");
 		
-		for (String nome : nomi) {
+		for (String nome :  nomi) {
 			System.out.println(nome);
 		}
 	}
