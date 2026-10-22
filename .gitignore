@@ -1,1 +1,6 @@
-./Java_Dario/.metadata
+# Workspace Eclipse
+.metadata/
+
+# Classi compilate
+bin/
+*.class
