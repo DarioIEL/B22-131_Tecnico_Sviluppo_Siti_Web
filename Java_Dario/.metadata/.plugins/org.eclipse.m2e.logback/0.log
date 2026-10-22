@@ -41,3 +41,7 @@ org.eclipse.core.runtime.CoreException: Launch configuration Hello references cl
 	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:522)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 2026-10-20 08:57:26,442 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2026-10-20 14:18:07,072 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2026-10-22 08:43:27,718 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2026-10-22 08:43:35,372 [Worker-27: Load https://gitlab.eclipse.org/eclipse/graphiti/graphiti/-/raw/master/parent/Graphiti.setup] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - ex-0000000139 https://gitlab.eclipse.org:443 responded with status 429; request will be automatically re-executed in 1 SECONDS (exec count 2)
+2026-10-22 08:43:36,018 [Worker-7: Load https://gitlab.eclipse.org/eclipse/ease/ease/-/raw/main/releng/org.eclipse.ease.releng/oomph/ease.setup] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - ex-0000000159 https://gitlab.eclipse.org:443 responded with status 429; request will be automatically re-executed in 1 SECONDS (exec count 2)

@@ -1,0 +1,56 @@
+package lezione02_Statement;
+
+public class for_Statement {
+	/**
+	 * Il ciclo for permette di ripetere un'istruzione per un numero definiti di
+	 * volte. Fa parte quindi della famiglia dei cicli definiti.
+	 */
+
+	/**
+	 * SINTASSI: inizializzazione condizione aggiornamento for(int i = 0; i < 3;
+	 * i++){ ..corpo del for, viene eseguito finché la condizione è TRUE }
+	 * 
+	 */
+	public static void main(String[] args) {
+
+		for (int i = 0; i < 3; i++) {
+			System.out.println("Ciao " + i);
+		}
+
+		System.out.println("For al contrario");
+
+		for (int i = 3; i > 0; i--) {
+			System.out.println("Ciao " + i);
+		}
+
+		System.out.println("For con doppia variabile");
+
+		for (int i = 0, j = 10; j >= 0 && i <= 10; j--, i++) {
+			System.out.println("Ciao i = " + i + "; j = " + j);
+		}
+
+		// Innesti con if + continue e break
+		// break interrompe il ciclo
+
+		// idea: ciclo da 0 a 9, al ciclo 5 devo interrompere tutto
+		for (int i = 0; i < 10; i++) {
+			// in questo caso voglio interrompere quando la i = 5
+			if (i == 2) {
+				System.out.println("Sei al giro " + i);
+				System.out.println("Ti fermi qui");
+				break;
+			}
+			System.out.println("Sei al giro " + i);
+		}
+
+		// continue permette di saltare un'iterazione
+		System.out.println("For con CONTINUE");
+		for (int i = 0; i < 10; i++) {
+			if (i == 3) {
+				continue;
+			}
+			System.out.println("Sei al giro " + i);
+		}
+
+	}
+}

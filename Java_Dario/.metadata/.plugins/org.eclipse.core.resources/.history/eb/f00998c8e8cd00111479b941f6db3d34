@@ -1,0 +1,34 @@
+package lezione02_Statement;
+
+public class Esercizio_If {
+	public static void main(String[] args) {
+		
+		/**
+		 * Esami all'università
+		 * Dobbiamo valutare un esame all'università. Per poter sostenere l'orale devo aver
+		 * totalizzato almeno 18 all'esame scritto. Una volta inseriti entrambi i voti calcola 
+		 * la media per il voto finale
+		 */
+		
+		int votoScritto = 28;
+		int votoOrale = 30;
+		
+		if(votoScritto >= 18 && votoScritto <= 30) {
+			System.out.println("Bravo, sei ammesso all'orale");
+			
+			if(votoOrale >= 18 && votoOrale <= 30) {
+				double votoFinale = (votoOrale + votoScritto) / 2;
+				System.out.println("Bravo, hai passato anche l'orale. Il tuo voto è " + votoFinale);
+			}else if(votoOrale >= 1 && votoOrale < 18) {
+				System.out.println("Mi spiace, il tuo orale è scarso. Devi ripetere tutto l'esame");
+			}else {
+				System.out.println("Voto non valido");
+			}
+			
+		}else if(votoScritto >= 1 && votoScritto < 18) {
+			System.out.println("Mi spiace, non hai superato l'esame scritto. Ritenta");
+		}
+		
+		
+	}
+}

@@ -10,7 +10,27 @@ public class Esercizio_If {
 		 * la media per il voto finale
 		 */
 		
-		int votoScritto = 28;
-		int votoOrale = 30;
+		int votoScritto = 22;
+		int votoOrale = 23;
+		
+		if(votoScritto >= 18 && votoScritto <= 30) {
+			System.out.println("Bravo, sei ammesso all'orale");
+			
+			if(votoOrale >= 18 && votoOrale <= 30) {
+				double votoFinale = Math.round((double)(votoOrale + votoScritto) / 2);
+				System.out.println("Bravo, hai passato anche l'orale. Il tuo voto è " + votoFinale);
+			}else if(votoOrale >= 1 && votoOrale < 18) {
+				System.out.println("Mi spiace, il tuo orale è scarso. Devi ripetere tutto l'esame");
+			}else {
+				System.out.println("Voto non valido");
+			}
+			
+		}else if(votoScritto >= 1 && votoScritto < 18) {
+			System.out.println("Mi spiace, non hai superato l'esame scritto. Ritenta");
+		}else {
+			System.out.println("Voto non valido");
+		}
+		
+		
 	}
 }

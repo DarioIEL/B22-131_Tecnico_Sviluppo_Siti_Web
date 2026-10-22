@@ -51,5 +51,16 @@ public class If_Statement {
 		}
 		
 		
+		//ESEMPIO VOLUTAMENTE ERRATO. Eseguito il primo if non passo oltre
+		int miaEta = 50;
+		
+		if(miaEta >= 18) {
+			System.out.println("Sei Appena Maggiorenne");
+		}else if(miaEta >= 25 ) {
+			System.out.println("Stai diventando un adulto");
+		}else if(miaEta >= 45) {
+			System.out.println("Ormai sei grande");
+		}
+		
 	}
 }

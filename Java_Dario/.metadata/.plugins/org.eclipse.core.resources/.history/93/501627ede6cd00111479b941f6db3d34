@@ -1,0 +1,66 @@
+package lezione02_Statement;
+
+public class If_Statement {
+	public static void main(String[] args) {
+		//Uno dei pilastri della logica computazionale, serve a valutare delle condizioni boolean
+		/**
+		 * if(condizione){
+		 * 		..corpo o body, viene eseguito se e solo se la condizione è True
+		 * }
+		 * else if (condizione2) [opzionale] {
+		 * 		..esegue se condizione 2 è true
+		 * }
+		 * else { [OPZIONALE]
+		 * 		..esegue se tutte le condizioni precedenti sono false
+		 * }
+		 * 
+		 * 
+		 * ATT circa il funzionamento dell'if: una volta che una delle condizioni è valutata true, le successvive non verranno valutate. Vul dire che esco fuori dall'if
+		 */
+		
+		boolean pioggia = false;
+		
+		if(pioggia) {
+			System.out.println("Meglio se porti un ombrello");
+		}else {
+			System.out.println("Puoi mettere gli occhiali da sole");
+		}
+		
+//		L'utente può partecipare al corso se ha un'età compresa tra 18 e 35 anni
+		int etaUser = 8;
+		
+		if(etaUser >= 18 && etaUser <= 35) {
+			System.out.println("Hai l'età giusta per partecipare al corso");
+		}else if(etaUser < 18 && etaUser >= 1) {
+			System.out.println("Sei troppo piccolo per partecipare");
+		}else if(etaUser > 35 && etaUser <= 120) {
+			System.out.println("Sei troppo grande per partecipare");
+		}else {
+			System.out.println("Età non valida");
+		}
+		
+		//Fare la stessa cosa con un || OR
+		if(etaUser < 1 || etaUser > 120) {
+			System.out.println("Età non valida");
+		}else if(etaUser < 18) {
+			System.out.println("Mi spiace, non puoi partecipare al corso perché sei minorenne");
+		}else if( etaUser > 35) {
+			System.out.println("Sei troppo grande per partecipare");
+		}else {
+			System.out.println("Benvenuto nel nostro corso");
+		}
+		
+		
+		//ESEMPIO VOLUTAMENTE ERRATO. Eseguito il primo if non passo oltre
+		int miaEta = 50;
+		
+		if(miaEta >= 18) {
+			System.out.println("Sei Appena Maggiorenne");
+		}else if(miaEta >= 25 ) {
+			System.out.println("Stai diventando un adulto");
+		}else if(miaEta >= 45) {
+			System.out.println("Ormai sei grande");
+		}
+		
+	}
+}
