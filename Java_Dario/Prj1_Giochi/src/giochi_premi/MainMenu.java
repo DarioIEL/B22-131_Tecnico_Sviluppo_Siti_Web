@@ -26,13 +26,14 @@ public class MainMenu {
 				GiocoDadi.menuDadi();;
 				break;
 			case '2':
-//				Multipli.calcola()
-				/**
-				 * Scrivi tutti i numeri da 1 a 100. Per tutti i multipli di 3 stampa "Zoom", per tutti i multipli di 5 stampa "Boom". Per tutti i multipli di 3 e 5 stampa "Zoom Boom"
-				 */
+				Multipli.calcola();
+
 				break;
 			case '3':
 //				CalcolaVolumi.calcola()
+				break;
+			case '4':
+				//Triangoli
 				break;
 			default:
 				System.out.println("Non hai selezionato nulla");
