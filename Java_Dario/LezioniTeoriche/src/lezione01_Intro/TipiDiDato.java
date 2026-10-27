@@ -1,5 +1,7 @@
 package lezione01_Intro;
 
+
+
 public class TipiDiDato {
 
 	public static void main(String[] args) {
