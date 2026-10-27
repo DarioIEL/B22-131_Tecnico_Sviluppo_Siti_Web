@@ -23,7 +23,7 @@ public class MainMenu {
 			
 			switch(scelta) {
 			case '1':
-				GiocoDadi.menuDadi();;
+				GiocoDadi.menuDadi();
 				break;
 			case '2':
 				Multipli.calcola();
