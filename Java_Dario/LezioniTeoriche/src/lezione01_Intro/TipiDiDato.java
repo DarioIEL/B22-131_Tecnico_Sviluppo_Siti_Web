@@ -1,6 +1,6 @@
 package lezione01_Intro;
 
-
+import lezione05_Classi.Punto;
 
 public class TipiDiDato {
 
