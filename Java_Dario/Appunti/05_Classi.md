@@ -75,4 +75,3 @@ Questo meccanismo è uno dei motivi per cui Java è considerato un linguaggio **
 
 ---
 
-*Fonte: Dispensa Didattica — Corso B22-418-2025, Tecnico dello sviluppo e progettazione dei programmi informatici*

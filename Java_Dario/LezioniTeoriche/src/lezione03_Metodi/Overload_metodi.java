@@ -1,5 +1,7 @@
 package lezione03_Metodi;
 
+import java.util.Scanner;
+
 public class Overload_metodi {
 
 	//Posso sovraccaricare i metodi, espandendo la firma
@@ -25,7 +27,10 @@ public class Overload_metodi {
 	
 	public static void main(String[] args) {
 		salutaRespo();
-		salutaRespo("Benedetta");
+		System.out.println("Scrivi il nome di una respo da salutare");
+		Scanner scan = new Scanner(System.in);
+		String nomeRespo = scan.nextLine();
+		salutaRespo(nomeRespo);
 		salutaRespo("Egle", "Risola");
 		salutaRespo("Dario", 12);
 	}

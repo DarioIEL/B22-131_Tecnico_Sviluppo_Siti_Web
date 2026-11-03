@@ -35,7 +35,7 @@ public class for_Statement {
 		// idea: ciclo da 0 a 9, al ciclo 5 devo interrompere tutto
 		for (int i = 0; i < 10; i++) {
 			// in questo caso voglio interrompere quando la i = 5
-			if (i == 2) {
+			if (i == 5) {
 				System.out.println("Sei al giro " + i);
 				System.out.println("Ti fermi qui");
 				break;

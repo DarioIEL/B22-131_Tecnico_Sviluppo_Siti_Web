@@ -30,6 +30,9 @@ public class Switch_Statement {
 		case 7:
 			System.out.println("Domenica");
 			break;
+		default:
+			System.out.println("Hai messo un numero non valido");
+			break;
 		}
 
 		
@@ -51,5 +54,30 @@ public class Switch_Statement {
 			break;
 				
 			}
+		
+		//VideoGame
+		String archetipo = "Paladino";
+		switch (archetipo) {
+		case "Paladino":
+			System.out.println("Ministero della giustizia");
+			break;
+		case "Stregone":
+			System.out.println("Ministero della cultura");
+			break;
+		case "Ladro":
+			System.out.println("Ministero dei trasporti");
+			break;
+		default:
+			System.out.println("Scelta non valida");
+			break;
+		}
+		
+		if(archetipo.equals("Paladino")) {
+			System.out.println("");
+		}else if(archetipo.equals("Stregone")) {
+			System.out.println();
+		}
+		
+		
 		}
 	}

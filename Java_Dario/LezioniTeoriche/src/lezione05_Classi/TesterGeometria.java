@@ -29,5 +29,31 @@ public class TesterGeometria {
 		System.out.println(punto3D1); //Questo in automatico richiama il toString()
 		
 		
+		
+		//gioco con i segmenti
+		Punto A = new Punto(3,5);
+		Punto B = new Punto(1,8);
+		
+		Segmento segm1 = new Segmento(A, B);
+		segm1.calcolaLunghezza();
+		System.out.println("La lunghezza del segmento vale: " + segm1.lunghezza);
+		
+		Punto C = new Punto(7,2);
+		Punto D = new Punto(3,9);
+		Segmento segm2 = new Segmento(C,D);
+		System.out.println(segm2);
+		
+		//Voglio conoscere la x del puntoD
+		System.out.println("La x del punto D vale " + segm2.puntoB.x);
+		
+		
+		Segmento segm3 = new Segmento(new Punto(5,4), new Punto(0,0));
+		System.out.println(segm3);
+		//Voglio risalire alla y del puntoB
+		System.out.println("La y del punto B si trova in " + segm3.puntoB.y);
+		
+		Punto E = new Punto(5,6);
+		Punto F = new Punto(5,6);
+		System.out.println(E.equals(F)); //Approfondimento su PassByValue e Pass By Reference
 	}
 }

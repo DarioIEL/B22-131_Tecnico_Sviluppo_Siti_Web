@@ -1,7 +1,7 @@
 package lezione05_Classi;
 
 //La classe definisce un tipo di dato complesso
-public class Punto {
+public class Punto  {
 
 	//deinisco delle proprietà: STATO della CLASSE (insieme delle props)
 	int x;
@@ -17,6 +17,7 @@ public class Punto {
 	
 	//Costruttore a firma piena
 	public Punto(int x, int y) {
+		super();
 		this.x = x;
 		this.y = y;
 	}
@@ -49,7 +50,8 @@ public class Punto {
 		}
 		return "Punto [x=" + x + ", y=" + y + "]";
 	}
-	
+
+
 
 	
 }
