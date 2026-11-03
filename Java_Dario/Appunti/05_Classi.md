@@ -4,7 +4,7 @@
 
 ## Le Classi
 
-Una **classe** è un tipo di dato complesso che funge da "progetto" (blueprint) per la creazione di oggetti. Si può immaginare come lo stampo per i biscotti, il progetto di un'auto o di una casa: a partire dallo stesso progetto si possono realizzare migliaia di oggetti dello stesso tipo, ognuno con caratteristiche proprie.
+Una **classe** definisce un tipo di dato complesso che funge da "progetto" (blueprint) per la creazione di oggetti. Si può immaginare come lo stampo per i biscotti, il progetto di un'auto o di una casa: a partire dallo stesso progetto si possono realizzare migliaia di oggetti dello stesso tipo, ognuno con caratteristiche proprie.
 
 > "Una classe è un'astrazione indicante un insieme di oggetti che condividono le stesse caratteristiche e le stesse funzionalità"
 
