@@ -44,6 +44,7 @@ public class TesterPersona {
 		pers3.eta = scan.nextInt();
 		
 		System.out.println(pers3);
+		System.out.println("Ciao, test di git");
 				
 				
 	}
