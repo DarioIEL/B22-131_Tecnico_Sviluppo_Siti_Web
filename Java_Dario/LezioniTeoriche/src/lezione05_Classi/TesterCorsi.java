@@ -17,5 +17,7 @@ public class TesterCorsi {
 		aula1.aggiungiStudenti(stud1, stud2, stud3, stud4);
 		System.out.println(aula1);
 		System.out.println(aula1.elencoStudentiCompleto());
+	
+		
 	}
 }

@@ -15,11 +15,11 @@ public class TesterConto {
 
 		System.out.println("=====================");
 		
-		ContoCorrente cc2 = new ContoCorrente(new Persona("Marco", "Rossi", 35 ), 1 , "Conto Invesimenti");
+		ContoCorrente cc2 = new ContoCorrente(new Persona("Marco", "Rossi", 35 ), 10000 , "Conto Invesimenti");
 		
 //		System.out.println(cc2);
 //		System.out.println(cc2.proprietario);
 //		cc2.proprietario.verificaLegalità();
-
+		System.out.println(cc2);
 	}
 }
