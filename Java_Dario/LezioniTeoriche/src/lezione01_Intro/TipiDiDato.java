@@ -1,5 +1,6 @@
 package lezione01_Intro;
 
+import lezione05_Classi.Persona;
 import lezione05_Classi.Punto;
 
 public class TipiDiDato {
@@ -49,7 +50,6 @@ public class TipiDiDato {
 		
 		boolean acceso = true;
 		acceso = false;
-		
 		
 
 	}

@@ -25,7 +25,9 @@ public class Persona {
 		return "Persona [nome=" + nome + ", cognome=" + cognome + ", eta=" + eta + "]";
 	}
 
-	
+	public void verificaLegalità() {
+		System.out.println("Sì, puoi aprire il conto");
+	}
 	
 		
 }
