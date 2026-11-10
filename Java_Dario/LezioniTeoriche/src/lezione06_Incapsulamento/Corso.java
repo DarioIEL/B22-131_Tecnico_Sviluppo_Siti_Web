@@ -50,6 +50,7 @@ public class Corso {
 
 	public void setResponsabileCorso(Respo responsabileCorso) {
 		this.responsabileCorso = responsabileCorso;
+		responsabileCorso.setCorsi(this); //questo this fa riferimento all'istanza della classe corso creata		
 	}
 
 	@Override

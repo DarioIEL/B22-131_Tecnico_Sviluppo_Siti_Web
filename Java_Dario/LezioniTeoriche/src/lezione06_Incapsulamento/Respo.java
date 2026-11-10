@@ -1,5 +1,6 @@
 package lezione06_Incapsulamento;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Respo {
@@ -12,6 +13,7 @@ public class Respo {
 	public Respo(String nome, String cognome) {
 		this.nome = nome;
 		this.cognome = cognome;
+		this.corsiAssegnati = new ArrayList<>();
 	}
 
 	public void setCorsi(Corso... corsi) {
@@ -43,7 +45,7 @@ public class Respo {
 
 	@Override
 	public String toString() {
-		return "Respo [nome=" + nome + ", cognome=" + cognome + ", corsiAssegnati=" + corsiAssegnati + "]";
+		return "Respo [nome=" + nome + ", cognome=" + cognome + "]";
 	}
 	
 	

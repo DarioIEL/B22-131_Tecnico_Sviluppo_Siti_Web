@@ -29,6 +29,6 @@ public class Main {
 		corsoTSW.setStudenti(stud1,stud2,stud3,stud4);
 		corsoTSW.setResponsabileCorso(respo);
 		System.out.println(corsoTSW);
-		
+	
 	}
 }
