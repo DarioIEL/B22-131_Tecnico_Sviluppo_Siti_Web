@@ -8,12 +8,15 @@ public class Utente {
 	private String passwordHash;
 	private boolean confermaDati;
 	private int eta;
+	public boolean attivo;
 	
-	public Utente(String nome, String cognome, String email, int eta) {
+	public Utente(String nome, String cognome, String email, int eta, String password) {
 		this.nome = nome;
 		this.cognome = cognome;
 		this.email = email;
 		this.eta = eta;
+		setPassword(password);
+		this.attivo = true;
 	}
 
 
@@ -74,6 +77,7 @@ public class Utente {
 	
 	
 	public boolean verificaPassword(String tentativo) {
+//		System.out.println(calcolaHash(tentativo));
 		return tentativo != null && calcolaHash(tentativo).equals(passwordHash);
 	}
 	
@@ -81,5 +85,19 @@ public class Utente {
 	private String calcolaHash(String testo) {
 		return Integer.toHexString(testo.hashCode()); 
 	}
+
+	public boolean isAttivo() {
+		return attivo;
+	}
+	
+	public void disattiva() {
+		this.attivo = false;
+	}
+	
+	@Override
+	public String toString() {
+		return "Utente [nome=" + nome + ", cognome=" + cognome + ", email=" + email + ", eta=" + eta + "]";
+	}
+	
 	
 }
