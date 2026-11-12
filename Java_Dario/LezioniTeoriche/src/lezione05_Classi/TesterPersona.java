@@ -2,6 +2,8 @@ package lezione05_Classi;
 
 import java.util.Scanner;
 
+import lezione06_Incapsulamento.Admin;
+
 public class TesterPersona {
 
 	public static void main(String[] args) {
@@ -45,7 +47,8 @@ public class TesterPersona {
 		
 		System.out.println(pers3);
 		System.out.println("Ciao, test di git");
-				
-				
+			
+		
+		
 	}
 }
