@@ -78,4 +78,13 @@ public class BloccoNoteCtrl {
 			System.out.println("[ " + i + "] " + elencoNote.get(i).leggiNota());
 		}
 	}
+	
+	
+	//Metodi da sviluppare
+	/**
+	 * Modifica nota (passo una posizione e modifico quella nota)
+	 * Rimuovi Nota (passo posizione)
+	 * Leggi Nota Singola (passo una posizione e legge quella nota)
+	 * Svuota Blocco Note (pulisci)
+	 */
 }
