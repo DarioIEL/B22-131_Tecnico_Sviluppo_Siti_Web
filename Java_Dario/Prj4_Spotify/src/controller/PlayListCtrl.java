@@ -1,5 +1,9 @@
 package controller;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
 import model.Canzone;
 import model.Playlist;
 
@@ -31,8 +35,37 @@ public class PlayListCtrl {
 				System.out.println("Playlist piena, non ho inserito queste canzoni " + canzone.getTitolo());
 			}
 		}
-	
 	}
+	
+	//Carico le canzoni dal file presente in progetto. Uso lo scanner
+	public void caricaCanzoniDaFile(String percorso) {
+		File mioFileCanzoni = new File(percorso);
+		
+		try {
+			Scanner scan = new Scanner(mioFileCanzoni);
+			while(scan.hasNextLine()) {
+				String riga = scan.nextLine();
+				String[] separate = riga.split(","); //il metodo split taglia ogni volta che incontro un pattern. In questo caso taglia ogni volta che incontra la ,
+				
+				String cantante = separate[0];
+				String titolo = separate[1];
+				int durata = Integer.parseInt(separate[2].trim());
+				
+				Canzone canzone = new Canzone(titolo, durata, cantante);
+				
+				this.playlist.addSong(canzone);
+			}
+			
+		} catch (FileNotFoundException e) {
+			
+			e.printStackTrace();
+		}
+		
+		
+	}
+	
+	
+	
 
 	public StringBuilder stampaInfo() {
 		StringBuilder infoGlobale = new StringBuilder();

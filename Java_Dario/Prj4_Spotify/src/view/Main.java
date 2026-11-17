@@ -11,5 +11,11 @@ public class Main {
 		
 		System.out.println(playlistCtrlITA.stampaInfo());
 		
+		System.out.println("=== Carico in Playlist da File ===");
+		PlayListCtrl playListCtrlFile = new PlayListCtrl("Canzoni Varie da File");
+		playListCtrlFile.caricaCanzoniDaFile("./canzoni.csv");
+		System.out.println(playListCtrlFile.stampaInfo());
+		
+		
 	}
 }
