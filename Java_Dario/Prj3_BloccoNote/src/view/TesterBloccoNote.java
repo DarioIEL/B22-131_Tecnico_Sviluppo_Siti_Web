@@ -20,48 +20,49 @@ public class TesterBloccoNote {
 		System.out.println("Benvenuto nel blocco note: " + blocco.getNome());
 		
 		
-//		String titoloNota = "Prima Nota del giorno";
-//		String descrizioneNota = "Svolgere i seguenti argomenti a lezione: ....";
-//		try {
-//			blocco.addNota(titoloNota, descrizioneNota);
-//			System.out.println("Nota aggiunta con successo");
-//		}catch(IllegalArgumentException e) {
-//			System.out.println(e.getMessage());
-//		}
-//		blocco.stampaBloccoNote();
-
-		//Costruire il menu
-		boolean condUscita = false;
-		
-		while(!condUscita) {
-			scan.nextLine();
-			
-			System.out.println("a. Aggiungi nota");
-			System.out.println("b. Aggiungi nota in una posizione");
-			System.out.println("x. Esci");
-			
-			String scelta = scan.nextLine();
-			
-			try {	
-				switch(scelta) {
-					case "a":
-						String titolo = chiedi(scan, "Inserisci il titolo");
-						String descrizione = chiedi(scan, "Inserisci descrizione");
-						blocco.addNota(titolo, descrizione);
-					break;
-					case "x":
-						System.out.println("Arrivederci !!!");
-						condUscita = true;
-					break;
-					default:
-						System.out.println("Non ho capito la scelta");
-					
-				}
-			}catch(IllegalArgumentException e) {
-				System.out.println(e.getMessage());
-			}
+		String titoloNota = "Prima Nota del giorno";
+		String descrizioneNota = "Svolgere i seguenti argomenti a lezione: ....";
+		try {
+			blocco.addNota(titoloNota, descrizioneNota);
+			System.out.println("Nota aggiunta con successo");
+		}catch(IllegalArgumentException e) {
+			System.out.println(e.getMessage());
 		}
-		
+		blocco.stampaBloccoNote();
+
+//		//Costruire il menu
+//		boolean condUscita = false;
+//		
+//		while(!condUscita) {
+//			scan.nextLine();
+//			
+//			System.out.println("a. Aggiungi nota");
+//			System.out.println("b. Aggiungi nota in una posizione");
+//			System.out.println("x. Esci");
+//			
+//			String scelta = scan.nextLine();
+//			
+//			try {	
+//				switch(scelta) {
+//					case "a":
+//						String titolo = chiedi(scan, "Inserisci il titolo");
+//						String descrizione = chiedi(scan, "Inserisci descrizione");
+//						blocco.addNota(titolo, descrizione);
+//					break;
+//					case "x":
+//						
+//						System.out.println("Arrivederci !!!");
+//						condUscita = true;
+//					break;
+//					default:
+//						System.out.println("Non ho capito la scelta");
+//					
+//				}
+//			}catch(IllegalArgumentException e) {
+//				System.out.println(e.getMessage());
+//			}
+//		}
+//		
 		
 	}
 	

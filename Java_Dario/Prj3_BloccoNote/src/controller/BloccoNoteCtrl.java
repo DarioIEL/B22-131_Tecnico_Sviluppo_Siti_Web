@@ -10,7 +10,8 @@ public class BloccoNoteCtrl {
 	//voglio un blocco note a capacità limitata
 	public static final int CAPACITA_DEFAULT = 10;
 	
-	private String nome;
+	private String nome; //dichiaro una proprietà
+	
 	private final int capacitaMassima;
 	
 	private final List<Nota> elencoNote = new ArrayList<>(); 
@@ -19,6 +20,7 @@ public class BloccoNoteCtrl {
 		if(capacitaMassima <= 0) {
 			throw new IllegalArgumentException("La capacità deve essere maggiore di zero");
 		}
+		
 //		this.nome = nome;
 		setNome(nome);
 		this.capacitaMassima = capacitaMassima;
@@ -33,7 +35,7 @@ public class BloccoNoteCtrl {
 		if(nome == null || nome.isBlank()) {
 			throw new IllegalArgumentException("Il nome non può essere vuoto");
 		}
-		this.nome = nome.trim();
+		this.nome = nome.trim(); //assgno un valore alla proprietà
 	}
 
 
