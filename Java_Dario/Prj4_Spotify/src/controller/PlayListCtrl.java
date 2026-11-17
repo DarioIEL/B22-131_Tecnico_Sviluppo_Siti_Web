@@ -2,6 +2,7 @@ package controller;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.List;
 import java.util.Scanner;
 
 import model.Canzone;
@@ -65,7 +66,9 @@ public class PlayListCtrl {
 	}
 	
 	
-	
+	public List<Canzone> cerca(String parola){
+		return playlist.cercaPerTitolo(parola);
+	}
 
 	public StringBuilder stampaInfo() {
 		StringBuilder infoGlobale = new StringBuilder();
