@@ -1,5 +1,7 @@
 package lezione07_Ereditarieta_Polimorfismo_Astrazione;
 
+
+//Ereditarietà tra classi concrete ha senso se ho intenzione di istanziare oggetti di tipo Dipendente
 public class Dipendente {
 	private String nome;
 	private double stipendioBase;
