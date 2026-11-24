@@ -19,6 +19,7 @@ public class Dipendente {
 		return nome;
 	}
 
+
 	@Override
 	public String toString() {
 		return "Dipendente [nome=" + nome + ", stipendio =" + calcolaStipendio() + "]";

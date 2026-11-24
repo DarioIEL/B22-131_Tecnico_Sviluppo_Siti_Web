@@ -4,8 +4,8 @@ public class TriangoloEquilatero extends TriangoloABS {
 
 	private double lato;
 	
-	public TriangoloEquilatero(String colore, double lato) {
-		super(colore);
+	public TriangoloEquilatero(String colore, double lato, String tipo) {
+		super(colore, tipo);
 		this.lato = lato;
 	}
 

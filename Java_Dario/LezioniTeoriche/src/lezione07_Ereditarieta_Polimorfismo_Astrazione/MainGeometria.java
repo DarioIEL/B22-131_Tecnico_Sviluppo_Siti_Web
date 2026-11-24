@@ -18,7 +18,9 @@ public class MainGeometria {
 		FormaGeometrica fG1 = new Cerchio("Rosso", 4);
 		System.out.println(fG1.descrivi());
 		FormaGeometrica fG2 = new Rettangolo("Viola", 3, 7);
+	//  tipo Statico (riferimento)  tipo dinamico(oggetto in memoria)
 		System.out.println(fG2.descrivi());
+		fG2.calcolaArea(); //versione del metodo del rettangolo
 		
 		//Ipotetica utilità - avere una collezione di forme geometriche diverse tra loro ma tutte di tipo FormaGeometrica
 		FormaGeometrica forme[] = {
@@ -26,7 +28,7 @@ public class MainGeometria {
 				cerc1,
 				rett1,
 				fG1,
-				new TriangoloEquilatero("Giallo", 4)
+				new TriangoloEquilatero("Giallo", 4, "Equilatero")
 		};
 		
 		

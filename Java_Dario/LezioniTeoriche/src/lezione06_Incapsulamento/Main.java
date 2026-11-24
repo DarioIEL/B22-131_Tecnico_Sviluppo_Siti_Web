@@ -16,6 +16,7 @@ public class Main {
 		System.out.println(stud2.getNome());
 		System.out.println(stud2);
 		
+		
 		Studente stud3 = new Studente("Laura", "Verdi", 32);
 		System.out.println(stud3);
 		
