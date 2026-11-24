@@ -2,6 +2,7 @@ package lezione08_Eccezioni;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -20,6 +21,9 @@ public class ScriviLeggiWarehouse {
 		prodottiDaCaricare.add(new Prodotto("Matita HB", 0.1, 2000));
 		prodottiDaCaricare.add(new Prodotto("Gomma", 0.3, 250));
 		
+		save(prodottiDaCaricare);
+		
+		prodottiDaCaricare.add(new Prodotto("Prova", 0, 0));
 		save(prodottiDaCaricare);
 	}
 	
@@ -41,8 +45,14 @@ public class ScriviLeggiWarehouse {
 			} 
 	}
 	
-	//Trasforma i prodotti in CSV e li aggiunge al file (ATT: nel FileWriter utilizzare il TRUE)
+	//Trasforma i prodotti in CSV e li aggiunge al file (ATT: nel FileWriter utilizzare il TRUE che aggiunge in coda)
 	static boolean addProducts(List<Prodotto> prodotti) {
+		File mioFile = new File(FILE);
+		
+		if(!mioFile.exists()) {
+			System.out.println("Non puoi aggiungere un prodotto ad un file inesistente !!");
+			return false;
+		}
 		
 		return true;
 	}

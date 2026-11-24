@@ -23,7 +23,8 @@ public class Prodotto {
 
 		return name + ";" + price + ";" + amount;
 	}
-
+	
+	//Mi serve un metodo fromCSV che legge la singola riga del file e lo trasforma in un Prodotto
 	
 	
 }

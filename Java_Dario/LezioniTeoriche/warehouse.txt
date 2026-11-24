@@ -3,3 +3,4 @@ Penna Blu;0.2;500
 Quaderno quadretti;0.75;1500
 Matita HB;0.1;2000
 Gomma;0.3;250
+Prova;0.0;0
