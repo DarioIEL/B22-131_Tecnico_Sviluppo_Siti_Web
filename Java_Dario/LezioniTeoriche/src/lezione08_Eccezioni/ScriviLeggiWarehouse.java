@@ -26,7 +26,7 @@ public class ScriviLeggiWarehouse {
 	
 	static void save(List<Prodotto> prodotti){
 
-			try (BufferedWriter bw = new BufferedWriter(new FileWriter(FILE))){
+			try (BufferedWriter bw = new BufferedWriter(new FileWriter(FILE, false))){
 				bw.write("name;price;amount"); //Prima riga del csv
 				bw.newLine();
 				
@@ -41,7 +41,8 @@ public class ScriviLeggiWarehouse {
 			} 
 	}
 	
-	static boolean addProducts() {
+	//Trasforma i prodotti in CSV e li aggiunge al file (ATT: nel FileWriter utilizzare il TRUE)
+	static boolean addProducts(List<Prodotto> prodotti) {
 		
 		return true;
 	}
