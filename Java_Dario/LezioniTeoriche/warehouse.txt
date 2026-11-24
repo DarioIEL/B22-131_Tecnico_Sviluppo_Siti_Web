@@ -1,4 +1,4 @@
-name; price; amount
+name;price;amount
 Penna Blu;0.2;500
 Quaderno quadretti;0.75;1500
 Matita HB;0.1;2000

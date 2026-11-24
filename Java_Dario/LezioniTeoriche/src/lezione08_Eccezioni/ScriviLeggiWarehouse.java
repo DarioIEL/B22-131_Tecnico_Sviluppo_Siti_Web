@@ -25,10 +25,9 @@ public class ScriviLeggiWarehouse {
 	
 	
 	static void save(List<Prodotto> prodotti){
-		
-			try (BufferedWriter bw = new BufferedWriter(new FileWriter(FILE, false))) {
-				
-				bw.write("name; price; amount"); //Prima riga del csv
+
+			try (BufferedWriter bw = new BufferedWriter(new FileWriter(FILE))){
+				bw.write("name;price;amount"); //Prima riga del csv
 				bw.newLine();
 				
 				for(Prodotto prod: prodotti) {
@@ -38,10 +37,18 @@ public class ScriviLeggiWarehouse {
 				}
 				System.out.println("File salvato in: " + FILE);
 			} catch (IOException e) {
-				
 				System.out.println("Il file non è stato salvato: " + e.getMessage());
-			}
+			} 
+	}
+	
+	static boolean addProducts() {
 		
+		return true;
+	}
+	
+	static List<Prodotto> readProducts() {
+		
+		return null;
 	}
 	
 }
