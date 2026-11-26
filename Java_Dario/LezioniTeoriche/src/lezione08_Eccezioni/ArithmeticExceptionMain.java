@@ -3,11 +3,11 @@ package lezione08_Eccezioni;
 public class ArithmeticExceptionMain {
 	public static void main(String[] args) {
 		
-		int x = 10;
-		int y = 5;
+		double x = 10;
+		double y = 0;
 		
 		double r = 0.0;
-		
+
 		//In questo caso gestisco attraverso il blocco Try&Catch. Questi blocchi mi permettono di controllare l'eccezione che si genera all'esecuzione del codice, quindi evitano che si blocchi il codice
 		
 		try {
@@ -32,7 +32,7 @@ public class ArithmeticExceptionMain {
 		//try & catch con shortcut Alt + Shift + Z
 		try {
 			
-			double numero = 7/0;
+			
 			
 			numeriArr[0] = 2;
 			numeriArr[1] = 6;
@@ -44,8 +44,6 @@ public class ArithmeticExceptionMain {
 		} catch (ArrayIndexOutOfBoundsException e) {
 			// TODO Auto-generated catch block
 			System.out.println("Stai sfondando l'array");
-		}catch (ArithmeticException e) {
-			System.out.println("Cannot divide a number by 0");
 		}
 		finally {
 			System.out.println(numeriArr[0]);

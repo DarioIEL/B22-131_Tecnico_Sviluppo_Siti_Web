@@ -18,13 +18,13 @@ public class FileNotFoundMain {
 			try {
 				System.out.println(br.readLine());
 			} catch (IOException e) {
-				System.out.println("Riga vuota");
+				System.out.println("Non posso leggere una riga inesistente");
 			}
 
 		
 		} catch (FileNotFoundException e) {
 			System.out.println("Il file non è stato trovato !!");
-		}
+		} 
 		
 		stampa("Ciao a tutti");
 		stampa(null);
